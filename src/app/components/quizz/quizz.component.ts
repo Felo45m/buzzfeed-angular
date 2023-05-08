@@ -39,11 +39,10 @@ export class QuizzComponent implements OnInit{
 
   playerChoise(value:string) {
     this.answers.push(value)
-    console.log(this.answers)
-    console.log("teste")
+    this.nextStep()
   }
 
-  async nextStep() {
+  nextStep() {
     this.questionIndex+=1
 
     if(this.questionIndex > this.questionIndex) {
